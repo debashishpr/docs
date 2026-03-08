@@ -1,0 +1,35 @@
+---
+title: "Troubleshooting"
+description: "Common issues and quick fixes."
+---
+
+## Checkout shows `HTTP 502` or `checkout_creation_failed`
+
+- Retry once from **Settings > Subscription & Billing**.
+- If it repeats, capture timestamp and contact support.
+
+## Billing does not update after payment
+
+- Click **Refresh Billing**.
+- Wait 30-60 seconds and retry.
+- Webhook updates can be asynchronous.
+
+## Stripe not connected
+
+- Click **Refresh Status**.
+- Re-run **Connect Stripe**.
+- Confirm you used the intended mode (`test` vs `live`).
+
+## Data appears truncated
+
+- Compare active customer count to plan limit in Settings.
+- Upgrade plan if active count exceeds your current tier.
+
+## Contact support
+
+Use [monetizationapps.com/contact](https://www.monetizationapps.com/contact) and include:
+
+- timestamp with timezone
+- account email
+- Stripe account ID (if applicable)
+- screenshot of the error
