@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
-  <title id="title">MeterMonitor logo dark</title>
-  <desc id="desc">MonetizationApps mark with MeterMonitor wordmark for dark backgrounds.</desc>
-  <rect width="520" height="128" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 128" role="img" aria-labelledby="title desc">
+  <title id="title">MonetizationApps logo dark</title>
+  <desc id="desc">MonetizationApps mark with wordmark for dark backgrounds.</desc>
+  <rect width="620" height="128" fill="none"/>
   <path d="M18 100V26h18l23 35 23-35h18v74H84V56L59 92 34 56v44H18z" fill="#ffffff"/>
   <path d="M48 98h12V86H48v12zm18 0h12V72H66v26zm18 0h12V58H84v40z" fill="#14b8a6"/>
   <path d="M50 77l18-18 12-12 24-24 8 8-24 24-12 12-18 18H50z" fill="#14b8a6"/>
   <path d="M100 22h20v20l-20-20z" fill="#14b8a6"/>
-  <text x="152" y="82" fill="#ffffff" font-size="56" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="700">MeterMonitor</text>
+  <text x="152" y="82" fill="#ffffff" font-size="56" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="700">MonetizationApps</text>
 </svg>
