@@ -1,0 +1,40 @@
+---
+title: "Use Stripe restricted key"
+description: "Link Stripe using a restricted API key instead of OAuth."
+---
+
+Use this method when you want to connect Stripe without OAuth.
+
+## Requirements
+
+- Use a Stripe **restricted key** only (`rk_...`)
+- Do not use secret keys (`sk_...`)
+- Match mode and key prefix:
+  - **Test** mode -> `rk_test_...`
+  - **Live** mode -> `rk_live_...`
+- Required key read scopes:
+  - account
+  - billing meters
+  - customers
+
+## Save restricted key
+
+1. Open **Settings > Stripe Account Connection**.
+2. Click **Change Stripe Connection**.
+3. Select **Use Stripe restricted key**.
+4. Select mode (**Test** or **Live**).
+5. Paste the key and click **Save Restricted Key**.
+
+## Remove restricted key
+
+1. Stay in **Use Stripe restricted key**.
+2. Select the mode.
+3. Click **Remove Restricted Key**.
+
+If OAuth credentials are available for that mode, MeterMonitor can switch back to OAuth.
+
+## Common validation errors
+
+- **Mode does not match key**: selected mode and key/account mode are different.
+- **Secret key not allowed**: key starts with `sk_`.
+- **Missing permissions**: key cannot read account, meters, or customers.

@@ -34,7 +34,8 @@
             "group": "Stripe",
             "pages": [
               "stripe-connection",
-              "claim-existing-install"
+              "claim-existing-install",
+              "stripe-restricted-key"
             ]
           },
           {

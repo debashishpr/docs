@@ -13,12 +13,34 @@ description: "Common issues and quick fixes."
 - Click **Refresh Billing**.
 - Wait 30-60 seconds and retry.
 - Webhook updates can be asynchronous.
+- The page may not auto-refresh immediately after checkout completion.
+
+## Restricted key save fails with mode mismatch
+
+If you see a message like:
+
+- `The selected mode does not match the key`
+- `Selected mode is live, but key belongs to test mode`
+
+Do this:
+
+1. Verify selected mode in Settings (**Test** vs **Live**).
+2. Verify key prefix:
+   - Test -> `rk_test_...`
+   - Live -> `rk_live_...`
+3. Generate/copy the key from the same Stripe dashboard mode.
 
 ## Stripe not connected
 
 - Click **Refresh Status**.
 - Re-run **Connect Stripe**.
 - Confirm you used the intended mode (`test` vs `live`).
+
+## Cancel trial or switch-to-free fails
+
+- Retry from **Settings > Subscription & Billing**.
+- Click **Refresh Billing** to confirm latest provider state.
+- If you still see an HTTP error, capture timestamp and contact support.
 
 ## Data appears truncated
 

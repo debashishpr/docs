@@ -1,28 +1,38 @@
 ---
 title: "Stripe connection"
-description: "Connect, verify, and change your Stripe account."
+description: "Connect, verify, and switch Stripe authentication methods."
 ---
 
-## Connect Stripe
+## Connection methods
 
-1. Open **Settings**.
-2. Click **Connect Stripe**.
-3. Authorize in Stripe.
+MeterMonitor supports three ways to link Stripe in **Settings > Stripe Account Connection**:
+
+1. **Install/connect Stripe now** (OAuth)
+2. **Claim existing install** (already installed, enter `account_id`)
+3. **Use Stripe restricted key** (`rk_test_...` or `rk_live_...`)
+
+## Connect with OAuth
+
+1. Click **Connect Stripe** or **Change Stripe Connection**.
+2. Select **I will install/connect Stripe now**.
+3. Complete Stripe authorization.
 4. Return to MeterMonitor.
 
-## Verify connection
+## Verify connection status
 
-In **Stripe Account Connection**, check:
+In **Stripe Account Connection**, confirm:
 
-- `Connected` status
-- `Test` or `Live` environment
-- Stripe account ID
+- **Connected** badge
+- **Environment** (`Test` or `Live`)
+- **Auth** method (`OAuth` or `Restricted Key`)
+- Stripe account ID (`acct_...`)
 
-Use **Refresh Status** if the view is stale.
+Click **Refresh Status** if the view is stale.
 
-## Change Stripe account
+## Switch account or auth method
 
-Click **Change Stripe Account** and choose whether to:
+1. Click **Change Stripe Connection**.
+2. Select the method you want to use.
+3. Complete the selected flow.
 
-- install/connect now, or
-- claim an existing install.
+MeterMonitor keeps a single active mode at a time (`test` or `live`) for ingestion.

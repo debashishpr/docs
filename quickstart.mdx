@@ -11,8 +11,12 @@ description: "Get MeterMonitor running in minutes."
 ## Step 2: Connect Stripe
 
 1. Go to **Settings**.
-2. In **Stripe Account Connection**, click **Connect Stripe**.
-3. Complete Stripe OAuth and return to MeterMonitor.
+2. In **Stripe Account Connection**, click **Connect Stripe** or **Change Stripe Connection**.
+3. Choose one connection method:
+   - **Install/connect Stripe now** (OAuth)
+   - **Claim existing install** (enter `account_id`)
+   - **Use Stripe restricted key** (`rk_test_...` or `rk_live_...`)
+4. Complete the flow and return to MeterMonitor.
 
 ## Step 3: Verify data
 
@@ -30,3 +34,7 @@ description: "Get MeterMonitor running in minutes."
 <Note>
 Billing updates can be delayed briefly while webhook events process.
 </Note>
+
+<Tip>
+If you start a paid trial, the app shows a **Trial** badge and trial end date in **Settings > Subscription & Billing**.
+</Tip>
